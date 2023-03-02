@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+    </head>
+    <body>
+        <header>
+            <h1>CSC317 Website Registration</h1>
+            <h2>Register your account here</h2>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Registration.html">Registration</a></li>
+                    <li><a href="PostVideo.html">Post MP4</a></li>
+                    <li><a href="ViewPost.html">View Posts</a></li>
+                    <li><a href="Profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form>
+                <legend>Register Here:</legend><br></br>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required placeholder="Username"><br></br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Email"><br></br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required placeholder="Password"><br></br>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="password" id="confirm-password" required placeholder="Confirm Password">
+
+                <br></br>
+                <input type="checkbox" 
+                id="Age is 13+" 
+                name="Age is 13+" 
+                required placeholder="Age is 13+">
+                <label for="Age is 13+">User is 13+ years old</label>
+
+                <br></br>
+                <input 
+                type="checkbox" 
+                id="TOS complient" 
+                name="TOS complient" 
+                required placeholder="TOS complient">
+                <label for="User agrees to website TOS and Privacy Rules">
+                    <a href="" onclick="alert('TOS and Privacy rules')"></a>
+                    User agrees to website TOS and Privacy Rules</label>
+        
+                <br></br>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>Connor Moore &copy; 2023</p>
+        </footer>
+    </body>
+</html>
