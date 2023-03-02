@@ -8,11 +8,11 @@ Please follow the instructions below and fill in the information requested when 
 
 ## Student Information
 
-|               | Information   |
-|:-------------:|:-------------:|
-| Student Name  | name-here     |
-| Student ID    | id-here       |
-| Student Email | email-here    |
+|               | Information       |
+|:-------------:|:-----------------:|
+| Student Name  | Connor Moore      |
+| Student ID    | 921995422         |
+| Student Email | cmoore14@sfsu.edu |
 
 
 
