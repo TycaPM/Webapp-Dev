@@ -1,8 +1,75 @@
+h1 {
+  color:white;
+  margin: 0px 0px 0px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  background-color: grey;
+}
+h2 {
+  color:white;
+}
+
+ul {
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  top:0;
+  width: 100%;
+}
+
+#comment-section ul{
+  background-color: beige !important;
+}
+#comment-section li{
+  all:unset !important;
+}
+#comment-section h2 {
+  color:black;
+}
+#gifdivprofile img {
+  border-radius: 50% !important;
+}
+#IndexText h2 {
+  color: black !important;
+}
+
+#profilehtmlcontents li a {
+color: black;
+display: inline-block;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: black !important;
+  background-color: lightcoral;
+  
+}
+
+.active {
+  background-color: beige;
+}
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Bright", Helvetica, Arial, sans-serif;
+  background-color: beige;
 }
 
 a {
-  color: #00B7FF;
+  color:black;
+  display: block;
 }
