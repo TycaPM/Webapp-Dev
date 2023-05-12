@@ -73,3 +73,55 @@ a {
   color:black;
   display: block;
 }
+
+.valid-text{
+  outline:solid green;
+}
+
+.invalid-text{
+  outline:solid red;
+}
+
+.box-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-list .item {
+  flex-basis: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative; /* Add relative positioning */
+}
+
+.box-list .item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.box-list .item .item-text {
+  margin-top: 10px;
+}
+
+.box-title,
+.box-id {
+  transform: translate(25%, -25%);
+  text-align: center;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  width: 100px;
+}
+.box-id::before{
+  content: "ID: "; 
+}
+
+.box-title::before{
+  content: "Title: "; 
+}
+
+
+
+
+
