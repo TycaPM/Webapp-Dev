@@ -47,7 +47,7 @@ document.getElementById("password").addEventListener("input", function(ev) {
 document.getElementById("confirm-password").addEventListener("input", function(ev) {
   const password = document.getElementById("password").value;
   const confirmPassword = ev.currentTarget.value;
-  const isPasswordValid = password.length >= 8; // No need to recheck the requirements
+  const isPasswordValid = password.length >= 8;
 
   const confirmPasswordField = ev.currentTarget;
   confirmPasswordField.style.outlineColor = isPasswordValid && password === confirmPassword ? "green" : "red";
