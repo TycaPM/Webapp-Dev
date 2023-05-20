@@ -1,0 +1,10 @@
+<div class="video-card">
+    <img class="thumbnail" src="/{{thumbnail}}">
+    <div class="video-info">
+        <p class="video-title">Title: {{title}}</p>
+        <a class="viewPostButton" href="/posts/{{id}}">View</a>
+        <form action="/posts/delete/{{id}}" method="POST">
+            <button type="submit" class="deleteButton">Delete</button>
+        </form>
+    </div>
+</div>

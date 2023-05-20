@@ -10,7 +10,7 @@ h2 {
 }
 
 ul {
-  background-color: grey;
+  background-color: gray;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -85,13 +85,14 @@ a {
 .box-list {
   display: flex;
   flex-wrap: wrap;
+  transform: translate(2%, 2%);
 }
 
 .box-list .item {
   flex-basis: 25%;
   box-sizing: border-box;
   padding: 10px;
-  position: relative; /* Add relative positioning */
+  position: relative; 
 }
 
 .box-list .item img {
@@ -121,7 +122,188 @@ a {
   content: "Title: "; 
 }
 
+.dropdown-menu-nobs {
+  position: absolute;
+  top: 8.8%;
+  right: 5%;
+  font-size: 150%; 
+  border-radius: 3px;
+}
+
+.nav-items:not(.button-dropdown) {
+  background-color: sandybrown;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.button-dropdown{
+  background-color: sandybrown;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.nav-items:not(.button-dropdown):hover {
+  opacity: 1;
+}
+
+.footer {
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3%;
+  background-color: gray;
+  font-size: 100%;
+  color: white;
+  text-align: center;
+}
+
+main {
+  padding: 8px;
+}
+
+li.search-bar {
+  position: absolute;
+  margin-top: 0%;
+  margin-left: 59%;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.search-button {
+  position: absolute;
+  top: 24%;
+  right: -26%;
+}
 
 
+button.search-button {
+  padding: 9px 10px;
+  font-size: 12px;
+  line-height: 0;
+  box-sizing: border-box;
+  background-color: salmon;
+}
 
 
+.search-button:active {
+  background-color: sandybrown;
+  color: black;
+}
+
+.video-card {
+  display: inline-block;
+  width: 255px;
+  height: 350px;
+  background-color: darkgray;
+  margin: 20 50px;
+  text-align: center;
+  display: flexbox;
+  border-radius: 5px;
+  padding: -10%;
+  line-height: 1.65;
+}
+
+.thumbnail {
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.video-info {
+  padding: 10px 10px;
+}
+
+.post-button {
+  display: inline-block;
+  padding: 1.75px 7px;
+  background-color: salmon;
+  color: #333;
+  border: .75px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.post-button:active {
+  background-color: sandybrown;
+}
+
+.alert.alert-danger{
+  width: 25%;
+  right: 37%;
+  position: fixed;
+  padding: 15px;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.alert.alert-success {
+  width: 25%;
+  right: 37%;
+  position: fixed;
+  padding: 15px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.alert.alert-danger {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.alert.alert-success {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.deleteButton {
+  background-color: lightcoral;
+  color: black;
+}
+
+.deleteButton:active {
+  background-color: sandybrown;
+  color: black;
+}
+
+.viewPostButton {
+  border: 2px solid greenyellow;
+  color: black;
+  text-decoration: none;
+  padding: 1px 10.5px;
+  display: inline-block;
+  background-color: greenyellow;
+  border-color: black;
+}
+
+.viewPostButton:active{
+  background-color: green;
+  color: black;
+}

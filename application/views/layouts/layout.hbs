@@ -2,10 +2,23 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link rel="icon" href="/public/favicon.ico" sizes="70x70" type="image/ico">
-    <link rel='stylesheet' href='/public/css/style.css' />
+    <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+        {{#each js}}
+          <script defer src="/public/js/{{this}}"></script>
+        {{/each}}
   </head>
   <body>
-    {{{body}}}
+      <div id="container">
+        {{#if (nonEmptyObject messages)}}
+          {{> flashMessage this}}
+        {{/if}}
+        {{> header}}
+        {{> nav}}
+        {{{body}}}
+        {{> footer}}
   </body>
 </html>

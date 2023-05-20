@@ -1,2 +1,6 @@
-<h1>{{title}}</h1>
-<p>Hello {{ name }},Welcome to {{title}}</p>
+<main id="main-content">
+    <br></br><strong class="headerIndex">All current posts on the site:</strong><br></br><br></br>
+    {{#each posts}}
+        {{> cardIndex this}}
+    {{/each}}
+</main>

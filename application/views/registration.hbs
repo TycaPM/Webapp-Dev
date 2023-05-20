@@ -1,0 +1,39 @@
+<main>
+    <form id="reg-form" class="input-form"
+        action="/users/registration" method="POST" 
+        enctype="application/x-www-form-urlencoded">
+        <br></br><legend>Register Here:</legend><br></br>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required placeholder="Username"><br></br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Email"><br></br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required placeholder="Password"><br></br>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword" 
+        required placeholder="confirmPassword">
+
+        <br></br>
+        <input type="checkbox" 
+        id="Age is 13+" 
+        name="ageCheck" 
+        required placeholder="Age is 13+">
+        <label for="Age is 13+">User is 13+ years old</label>
+
+        <br></br>
+        <div id="regcheck">
+        <input 
+        type="checkbox" 
+        id="TOS complient" 
+        name="tosCheck" 
+        required placeholder="TOS complient">
+        <label for="User agrees to website TOS and Privacy Rules">
+            <a href="" aria-label="TOS Link" onclick="alert('TOS and Privacy rules')">
+                User agrees to website TOS and Privacy Rules
+        </a>
+        </label>
+        <br></br>
+        </div>
+        <button type="submit" onclick="validatePassword()">Submit</button>
+    </form>
+</main>

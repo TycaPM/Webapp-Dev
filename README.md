@@ -14,14 +14,17 @@ Please follow the instructions below and fill in the information requested when 
 | Student ID    | 921995422         |
 | Student Email | cmoore14@sfsu.edu |
 
-
+#Link to web app
+localhost:3000
 
 # Build/Run Instructions
 
 ## Build Instructions
-1. steps here
-2. steps here
+1. CD into your application folder
+2. Configure your .env file to have accurate info
+3. Run "npm run builddb" - to create the database
+
 
 ## Run Instructions
-1. steps here
-2. steps here 
+1. Run "npm start"
+2. Go to the url "localhost:3000"
