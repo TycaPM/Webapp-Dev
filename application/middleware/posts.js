@@ -62,10 +62,13 @@ module.exports = {
     },
     getRecentPosts: async function(req, res, next){
         try{
-            var [rows, _] = await db.execute(`select id,thumbnail,title from posts order by createdAt desc;`);
+            var [rows, _] = await db.execute(
+            `select id,thumbnail,title 
+            from posts 
+            order by createdAt desc;`);
 
             if(rows && rows.length == 0){
-                return res.redirect(`/`);
+                next();
             }else{
                 res.locals.posts = rows;
                 return res.render('index');
