@@ -1,3 +1,4 @@
+var url2 = "https://do.pishock.com/api/apioperate";
 var url = "https://jsonplaceholder.typicode.com/albums/2/photos";
 var divCounter = 0;
 
@@ -55,4 +56,5 @@ async function fetchWithDOMAPI(){
         console.log(error);
     }
 }
+console.log(url.response);
 fetchWithDOMAPI();
